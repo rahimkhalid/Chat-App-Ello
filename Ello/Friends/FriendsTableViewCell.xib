@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="3rA-wY-SKX" customClass="FriendsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3rA-wY-SKX" id="Jiz-o4-pSu">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jj-RW-FkJ">
+                        <rect key="frame" x="10" y="9" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0jj-RW-FkJ" secondAttribute="height" multiplier="1:1" id="45M-yW-Iec"/>
+                            <constraint firstAttribute="width" constant="55" id="cJI-ZZ-wh4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEN-bM-WN5">
+                        <rect key="frame" x="73" y="25" width="294" height="21"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HEN-bM-WN5" firstAttribute="top" secondItem="0jj-RW-FkJ" secondAttribute="top" constant="16" id="9Tf-ot-RVQ"/>
+                    <constraint firstItem="0jj-RW-FkJ" firstAttribute="centerY" secondItem="Jiz-o4-pSu" secondAttribute="centerY" id="R0v-yc-h05"/>
+                    <constraint firstItem="HEN-bM-WN5" firstAttribute="leading" secondItem="0jj-RW-FkJ" secondAttribute="trailing" constant="8" id="dKd-wa-PzD"/>
+                    <constraint firstItem="0jj-RW-FkJ" firstAttribute="leading" secondItem="Jiz-o4-pSu" secondAttribute="leading" constant="10" id="eFF-3o-99g"/>
+                    <constraint firstAttribute="trailing" secondItem="HEN-bM-WN5" secondAttribute="trailing" constant="8" id="tpl-dR-fo0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="userImage" destination="0jj-RW-FkJ" id="Bl3-0M-aYB"/>
+                <outlet property="userName" destination="HEN-bM-WN5" id="smg-7i-hXo"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="75.5"/>
+        </tableViewCell>
+    </objects>
+</document>

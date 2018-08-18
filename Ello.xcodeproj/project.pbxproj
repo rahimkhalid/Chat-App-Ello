@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		526B0C313779CDEF723496CA /* libPods-Ello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFFB5732A441BC0BA7CCDBE /* libPods-Ello.a */; };
+		ED0496721FC99D7A0020D228 /* chatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0496711FC99D7A0020D228 /* chatViewController.m */; };
+		ED0D4F971F9CB1410060582F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D4F961F9CB1410060582F /* AppDelegate.m */; };
+		ED0D4F9D1F9CB1410060582F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0D4F9B1F9CB1410060582F /* Main.storyboard */; };
+		ED0D4FA01F9CB1410060582F /* Ello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED0D4F9E1F9CB1410060582F /* Ello.xcdatamodeld */; };
+		ED0D4FA21F9CB1410060582F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0D4FA11F9CB1410060582F /* Assets.xcassets */; };
+		ED0D4FA51F9CB1410060582F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0D4FA31F9CB1410060582F /* LaunchScreen.storyboard */; };
+		ED0D4FA81F9CB1410060582F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D4FA71F9CB1410060582F /* main.m */; };
+		ED0D4FAF1F9CB8150060582F /* ChatHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED0D4FAE1F9CB8150060582F /* ChatHistoryCell.xib */; };
+		ED0D4FB71F9CF6CD0060582F /* ChatHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D4FB61F9CF6CD0060582F /* ChatHistoryTableViewCell.m */; };
+		ED1292301FA49BAC00830790 /* MessageHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12922F1FA49BAC00830790 /* MessageHistoryViewController.m */; };
+		ED1292361FA49CFE00830790 /* UserChattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1292351FA49CFE00830790 /* UserChattingViewController.m */; };
+		ED12925C1FA49F5900830790 /* ChattingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED12925B1FA49F5900830790 /* ChattingStoryboard.storyboard */; };
+		ED12926A1FA4A73300830790 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1292691FA4A73300830790 /* LoginViewController.m */; };
+		ED12926F1FA4A74A00830790 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12926E1FA4A74A00830790 /* SignupViewController.m */; };
+		ED1292711FA4A75900830790 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1292701FA4A75900830790 /* Signup.storyboard */; };
+		ED12927C1FA606F000830790 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = ED12927B1FA606F000830790 /* UIColor+Hex.m */; };
+		ED183DDB200D23D7007C4B03 /* NSDate+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED183DDA200D23D7007C4B03 /* NSDate+Formatter.m */; };
+		ED1C03621FCEC24A006AF4DE /* FriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C03611FCEC24A006AF4DE /* FriendsListViewController.m */; };
+		ED1C03651FCEC28F006AF4DE /* FriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C03641FCEC28F006AF4DE /* FriendsTableViewCell.m */; };
+		ED1C03671FCEC2AA006AF4DE /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED1C03661FCEC2AA006AF4DE /* FriendsTableViewCell.xib */; };
+		ED1C036A1FCEC807006AF4DE /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C03691FCEC807006AF4DE /* UserModel.m */; };
+		ED24EDC2200B75F300AF428D /* FireBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED24EDC1200B75F300AF428D /* FireBaseService.m */; };
+		ED3879A31FBF8601005829D9 /* ChatSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED38799A1FBF8600005829D9 /* ChatSendCell.xib */; };
+		ED3879A51FBF8601005829D9 /* ChatCellSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = ED38799C1FBF8601005829D9 /* ChatCellSettings.m */; };
+		ED3879A61FBF8601005829D9 /* ChatTableViewCellXIB.m in Sources */ = {isa = PBXBuildFile; fileRef = ED38799F1FBF8601005829D9 /* ChatTableViewCellXIB.m */; };
+		ED3879A71FBF8601005829D9 /* ChatReceiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3879A11FBF8601005829D9 /* ChatReceiveCell.xib */; };
+		ED3879A81FBF8601005829D9 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3879A21FBF8601005829D9 /* ContentView.m */; };
+		ED3879AD1FC041D2005829D9 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3879AC1FC041D2005829D9 /* MessageModel.m */; };
+		ED4360941FB62FA800C4F062 /* MessageHistorySearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED4360931FB62FA800C4F062 /* MessageHistorySearchBar.xib */; };
+		ED4360981FB6310900C4F062 /* MessageHistorySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4360971FB6310900C4F062 /* MessageHistorySearchBar.m */; };
+		ED4361271FB6406F00C4F062 /* SF-Compact-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4360FC1FB63F1700C4F062 /* SF-Compact-Display-Bold.otf */; };
+		ED4361281FB6407200C4F062 /* SF-Compact-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4360FB1FB63F1600C4F062 /* SF-Compact-Display-Black.otf */; };
+		ED4361291FB6407800C4F062 /* SF-Compact-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4360FD1FB63F1700C4F062 /* SF-Compact-Display-Heavy.otf */; };
+		ED43612A1FB6407800C4F062 /* SF-Compact-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4360FE1FB63F1700C4F062 /* SF-Compact-Display-Light.otf */; };
+		ED43612B1FB6407800C4F062 /* SF-Compact-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4360FF1FB63F1700C4F062 /* SF-Compact-Display-Medium.otf */; };
+		ED43612C1FB6407800C4F062 /* SF-Compact-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361001FB63F1700C4F062 /* SF-Compact-Display-Regular.otf */; };
+		ED43612D1FB6407800C4F062 /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361011FB63F1700C4F062 /* SF-Compact-Display-Semibold.otf */; };
+		ED43612E1FB6407800C4F062 /* SF-Compact-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361021FB63F1700C4F062 /* SF-Compact-Display-Thin.otf */; };
+		ED43612F1FB6407800C4F062 /* SF-Compact-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361031FB63F1700C4F062 /* SF-Compact-Display-Ultralight.otf */; };
+		ED4361301FB6407800C4F062 /* SF-Compact-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361041FB63F1700C4F062 /* SF-Compact-Text-Bold.otf */; };
+		ED4361311FB6407800C4F062 /* SF-Compact-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361051FB63F1700C4F062 /* SF-Compact-Text-BoldItalic.otf */; };
+		ED4361321FB6407800C4F062 /* SF-Compact-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361061FB63F1700C4F062 /* SF-Compact-Text-Heavy.otf */; };
+		ED4361331FB6407800C4F062 /* SF-Compact-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361071FB63F1700C4F062 /* SF-Compact-Text-HeavyItalic.otf */; };
+		ED4361341FB6407800C4F062 /* SF-Compact-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361081FB63F1700C4F062 /* SF-Compact-Text-Light.otf */; };
+		ED4361351FB6407800C4F062 /* SF-Compact-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361091FB63F1700C4F062 /* SF-Compact-Text-LightItalic.otf */; };
+		ED4361361FB6407800C4F062 /* SF-Compact-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610A1FB63F1700C4F062 /* SF-Compact-Text-Medium.otf */; };
+		ED4361371FB6407800C4F062 /* SF-Compact-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610B1FB63F1700C4F062 /* SF-Compact-Text-MediumItalic.otf */; };
+		ED4361381FB6407800C4F062 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610C1FB63F1700C4F062 /* SF-Compact-Text-Regular.otf */; };
+		ED4361391FB6407800C4F062 /* SF-Compact-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610D1FB63F1700C4F062 /* SF-Compact-Text-RegularItalic.otf */; };
+		ED43613A1FB6407800C4F062 /* SF-Compact-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610E1FB63F1700C4F062 /* SF-Compact-Text-Semibold.otf */; };
+		ED43613B1FB6407800C4F062 /* SF-Compact-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43610F1FB63F1700C4F062 /* SF-Compact-Text-SemiboldItalic.otf */; };
+		ED43613C1FB6408200C4F062 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361121FB63F1700C4F062 /* SF-UI-Display-Black.otf */; };
+		ED43613D1FB6408200C4F062 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361131FB63F1700C4F062 /* SF-UI-Display-Bold.otf */; };
+		ED43613E1FB6408200C4F062 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361141FB63F1700C4F062 /* SF-UI-Display-Heavy.otf */; };
+		ED43613F1FB6408200C4F062 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361151FB63F1700C4F062 /* SF-UI-Display-Light.otf */; };
+		ED4361401FB6408200C4F062 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361161FB63F1700C4F062 /* SF-UI-Display-Medium.otf */; };
+		ED4361411FB6408200C4F062 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361171FB63F1700C4F062 /* SF-UI-Display-Regular.otf */; };
+		ED4361421FB6408200C4F062 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361181FB63F1700C4F062 /* SF-UI-Display-Semibold.otf */; };
+		ED4361431FB6408200C4F062 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361191FB63F1700C4F062 /* SF-UI-Display-Thin.otf */; };
+		ED4361441FB6408200C4F062 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611A1FB63F1700C4F062 /* SF-UI-Display-Ultralight.otf */; };
+		ED4361451FB6408200C4F062 /* SF-UI-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611B1FB63F1700C4F062 /* SF-UI-Text-Bold.otf */; };
+		ED4361461FB6408200C4F062 /* SF-UI-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611C1FB63F1700C4F062 /* SF-UI-Text-BoldItalic.otf */; };
+		ED4361471FB6408200C4F062 /* SF-UI-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611D1FB63F1700C4F062 /* SF-UI-Text-Heavy.otf */; };
+		ED4361481FB6408200C4F062 /* SF-UI-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611E1FB63F1700C4F062 /* SF-UI-Text-HeavyItalic.otf */; };
+		ED4361491FB6408200C4F062 /* SF-UI-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED43611F1FB63F1700C4F062 /* SF-UI-Text-Light.otf */; };
+		ED43614A1FB6408200C4F062 /* SF-UI-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361201FB63F1700C4F062 /* SF-UI-Text-LightItalic.otf */; };
+		ED43614B1FB6408200C4F062 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361211FB63F1700C4F062 /* SF-UI-Text-Medium.otf */; };
+		ED43614C1FB6408200C4F062 /* SF-UI-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361221FB63F1700C4F062 /* SF-UI-Text-MediumItalic.otf */; };
+		ED43614D1FB6408200C4F062 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361231FB63F1700C4F062 /* SF-UI-Text-Regular.otf */; };
+		ED43614E1FB6408200C4F062 /* SF-UI-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361241FB63F1700C4F062 /* SF-UI-Text-RegularItalic.otf */; };
+		ED43614F1FB6408200C4F062 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361251FB63F1700C4F062 /* SF-UI-Text-Semibold.otf */; };
+		ED4361501FB6408200C4F062 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361261FB63F1700C4F062 /* SF-UI-Text-SemiboldItalic.otf */; };
+		ED4361571FB648B300C4F062 /* ElloNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4361561FB648B300C4F062 /* ElloNavigationBar.m */; };
+		ED4361591FB70FB200C4F062 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */; };
+		EDAD07F01FB727430062EF96 /* tabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAD07EF1FB727430062EF96 /* tabBarViewController.m */; };
+		EDDB3663201CCEC50099C7CD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDB3662201CCEC50099C7CD /* libc++.tbd */; };
+		EDDB3665201CF33F0099C7CD /* AVCallStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB3664201CF33F0099C7CD /* AVCallStoryBoard.storyboard */; };
+		EDFDF522201CB50D00B141C2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF521201CB50D00B141C2 /* AudioToolbox.framework */; };
+		EDFDF524201CB51200B141C2 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF523201CB51200B141C2 /* VideoToolbox.framework */; };
+		EDFDF526201CB51900B141C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF525201CB51800B141C2 /* AVFoundation.framework */; };
+		EDFDF528201CB52200B141C2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF527201CB52200B141C2 /* CoreTelephony.framework */; };
+		EDFDF52A201CB52900B141C2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF529201CB52900B141C2 /* GLKit.framework */; };
+		EDFDF52C201CB53000B141C2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF52B201CB53000B141C2 /* CoreMedia.framework */; };
+		EDFDF52E201CB53600B141C2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFDF52D201CB53600B141C2 /* SystemConfiguration.framework */; };
+		EDFDF532201CB5A300B141C2 /* VideoCallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF531201CB5A300B141C2 /* VideoCallViewController.m */; };
+		EDFDF535201CB5F400B141C2 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFDF534201CB5F400B141C2 /* Utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AFFB5732A441BC0BA7CCDBE /* libPods-Ello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7238EE402083D8726D07C6C4 /* Pods-TwilioVideo-Ello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-Ello.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-Ello/Pods-TwilioVideo-Ello.debug.xcconfig"; sourceTree = "<group>"; };
+		A3ECEA1F7A02EC239B8088D0 /* Pods-TwilioVideo-Ello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-Ello.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-Ello/Pods-TwilioVideo-Ello.release.xcconfig"; sourceTree = "<group>"; };
+		AF021D9433698047897C99D8 /* Pods-Ello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ello.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ello/Pods-Ello.release.xcconfig"; sourceTree = "<group>"; };
+		E787006D2FF20E90362B04CC /* libPods-TwilioVideo-Ello.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwilioVideo-Ello.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0496701FC99D7A0020D228 /* chatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chatViewController.h; sourceTree = "<group>"; };
+		ED0496711FC99D7A0020D228 /* chatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatViewController.m; sourceTree = "<group>"; };
+		ED0D4F921F9CB1400060582F /* Ello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0D4F951F9CB1410060582F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED0D4F961F9CB1410060582F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED0D4F9C1F9CB1410060582F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED0D4F9F1F9CB1410060582F /* Ello.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ello.xcdatamodel; sourceTree = "<group>"; };
+		ED0D4FA11F9CB1410060582F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED0D4FA41F9CB1410060582F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED0D4FA61F9CB1410060582F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED0D4FA71F9CB1410060582F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED0D4FAE1F9CB8150060582F /* ChatHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHistoryCell.xib; sourceTree = "<group>"; };
+		ED0D4FB51F9CF6CD0060582F /* ChatHistoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatHistoryTableViewCell.h; sourceTree = "<group>"; };
+		ED0D4FB61F9CF6CD0060582F /* ChatHistoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatHistoryTableViewCell.m; sourceTree = "<group>"; };
+		ED12922E1FA49BAC00830790 /* MessageHistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHistoryViewController.h; sourceTree = "<group>"; };
+		ED12922F1FA49BAC00830790 /* MessageHistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageHistoryViewController.m; sourceTree = "<group>"; };
+		ED1292341FA49CFE00830790 /* UserChattingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserChattingViewController.h; sourceTree = "<group>"; };
+		ED1292351FA49CFE00830790 /* UserChattingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserChattingViewController.m; sourceTree = "<group>"; };
+		ED12925B1FA49F5900830790 /* ChattingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChattingStoryboard.storyboard; sourceTree = "<group>"; };
+		ED1292681FA4A73300830790 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		ED1292691FA4A73300830790 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		ED12926D1FA4A74A00830790 /* SignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		ED12926E1FA4A74A00830790 /* SignupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		ED1292701FA4A75900830790 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		ED12927A1FA606F000830790 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		ED12927B1FA606F000830790 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		ED183DD9200D23D7007C4B03 /* NSDate+Formatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Formatter.h"; sourceTree = "<group>"; };
+		ED183DDA200D23D7007C4B03 /* NSDate+Formatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Formatter.m"; sourceTree = "<group>"; };
+		ED1C03601FCEC24A006AF4DE /* FriendsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsListViewController.h; sourceTree = "<group>"; };
+		ED1C03611FCEC24A006AF4DE /* FriendsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsListViewController.m; sourceTree = "<group>"; };
+		ED1C03631FCEC28F006AF4DE /* FriendsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewCell.h; sourceTree = "<group>"; };
+		ED1C03641FCEC28F006AF4DE /* FriendsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewCell.m; sourceTree = "<group>"; };
+		ED1C03661FCEC2AA006AF4DE /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
+		ED1C03681FCEC807006AF4DE /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		ED1C03691FCEC807006AF4DE /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		ED24EDC0200B75F300AF428D /* FireBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireBaseService.h; sourceTree = "<group>"; };
+		ED24EDC1200B75F300AF428D /* FireBaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireBaseService.m; sourceTree = "<group>"; };
+		ED267DE51FE5484F007AB034 /* Ello.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ello.entitlements; sourceTree = "<group>"; };
+		ED3879991FBF8600005829D9 /* ChatTableViewCellXIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCellXIB.h; sourceTree = "<group>"; };
+		ED38799A1FBF8600005829D9 /* ChatSendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatSendCell.xib; sourceTree = "<group>"; };
+		ED38799C1FBF8601005829D9 /* ChatCellSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCellSettings.m; sourceTree = "<group>"; };
+		ED38799D1FBF8601005829D9 /* ChatCellSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCellSettings.h; sourceTree = "<group>"; };
+		ED38799F1FBF8601005829D9 /* ChatTableViewCellXIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCellXIB.m; sourceTree = "<group>"; };
+		ED3879A01FBF8601005829D9 /* ContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentView.h; sourceTree = "<group>"; };
+		ED3879A11FBF8601005829D9 /* ChatReceiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatReceiveCell.xib; sourceTree = "<group>"; };
+		ED3879A21FBF8601005829D9 /* ContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
+		ED3879AB1FC041D2005829D9 /* MessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		ED3879AC1FC041D2005829D9 /* MessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		ED43608E1FB6257C00C4F062 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		ED4360901FB6267D00C4F062 /* Ello-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ello-Prefix.pch"; sourceTree = "<group>"; };
+		ED4360931FB62FA800C4F062 /* MessageHistorySearchBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageHistorySearchBar.xib; sourceTree = "<group>"; };
+		ED4360961FB6310900C4F062 /* MessageHistorySearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHistorySearchBar.h; sourceTree = "<group>"; };
+		ED4360971FB6310900C4F062 /* MessageHistorySearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageHistorySearchBar.m; sourceTree = "<group>"; };
+		ED4360FA1FB63F1600C4F062 /* License Agreement for SF Compact Font.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "License Agreement for SF Compact Font.pdf"; sourceTree = "<group>"; };
+		ED4360FB1FB63F1600C4F062 /* SF-Compact-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Black.otf"; sourceTree = "<group>"; };
+		ED4360FC1FB63F1700C4F062 /* SF-Compact-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Bold.otf"; sourceTree = "<group>"; };
+		ED4360FD1FB63F1700C4F062 /* SF-Compact-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Heavy.otf"; sourceTree = "<group>"; };
+		ED4360FE1FB63F1700C4F062 /* SF-Compact-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Light.otf"; sourceTree = "<group>"; };
+		ED4360FF1FB63F1700C4F062 /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
+		ED4361001FB63F1700C4F062 /* SF-Compact-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Regular.otf"; sourceTree = "<group>"; };
+		ED4361011FB63F1700C4F062 /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
+		ED4361021FB63F1700C4F062 /* SF-Compact-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Thin.otf"; sourceTree = "<group>"; };
+		ED4361031FB63F1700C4F062 /* SF-Compact-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		ED4361041FB63F1700C4F062 /* SF-Compact-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Bold.otf"; sourceTree = "<group>"; };
+		ED4361051FB63F1700C4F062 /* SF-Compact-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		ED4361061FB63F1700C4F062 /* SF-Compact-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Heavy.otf"; sourceTree = "<group>"; };
+		ED4361071FB63F1700C4F062 /* SF-Compact-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		ED4361081FB63F1700C4F062 /* SF-Compact-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Light.otf"; sourceTree = "<group>"; };
+		ED4361091FB63F1700C4F062 /* SF-Compact-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		ED43610A1FB63F1700C4F062 /* SF-Compact-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.otf"; sourceTree = "<group>"; };
+		ED43610B1FB63F1700C4F062 /* SF-Compact-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		ED43610C1FB63F1700C4F062 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
+		ED43610D1FB63F1700C4F062 /* SF-Compact-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		ED43610E1FB63F1700C4F062 /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
+		ED43610F1FB63F1700C4F062 /* SF-Compact-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		ED4361111FB63F1700C4F062 /* License Agreement for SF UI Font.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "License Agreement for SF UI Font.pdf"; sourceTree = "<group>"; };
+		ED4361121FB63F1700C4F062 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		ED4361131FB63F1700C4F062 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		ED4361141FB63F1700C4F062 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		ED4361151FB63F1700C4F062 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		ED4361161FB63F1700C4F062 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		ED4361171FB63F1700C4F062 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		ED4361181FB63F1700C4F062 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		ED4361191FB63F1700C4F062 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		ED43611A1FB63F1700C4F062 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		ED43611B1FB63F1700C4F062 /* SF-UI-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Bold.otf"; sourceTree = "<group>"; };
+		ED43611C1FB63F1700C4F062 /* SF-UI-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		ED43611D1FB63F1700C4F062 /* SF-UI-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Heavy.otf"; sourceTree = "<group>"; };
+		ED43611E1FB63F1700C4F062 /* SF-UI-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		ED43611F1FB63F1700C4F062 /* SF-UI-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Light.otf"; sourceTree = "<group>"; };
+		ED4361201FB63F1700C4F062 /* SF-UI-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		ED4361211FB63F1700C4F062 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		ED4361221FB63F1700C4F062 /* SF-UI-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		ED4361231FB63F1700C4F062 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		ED4361241FB63F1700C4F062 /* SF-UI-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		ED4361251FB63F1700C4F062 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		ED4361261FB63F1700C4F062 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		ED4361551FB648B300C4F062 /* ElloNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElloNavigationBar.h; sourceTree = "<group>"; };
+		ED4361561FB648B300C4F062 /* ElloNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElloNavigationBar.m; sourceTree = "<group>"; };
+		ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDAD07EE1FB727430062EF96 /* tabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabBarViewController.h; sourceTree = "<group>"; };
+		EDAD07EF1FB727430062EF96 /* tabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabBarViewController.m; sourceTree = "<group>"; };
+		EDDB3662201CCEC50099C7CD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EDDB3664201CF33F0099C7CD /* AVCallStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AVCallStoryBoard.storyboard; sourceTree = "<group>"; };
+		EDFDF521201CB50D00B141C2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EDFDF523201CB51200B141C2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EDFDF525201CB51800B141C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EDFDF527201CB52200B141C2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EDFDF529201CB52900B141C2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EDFDF52B201CB53000B141C2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EDFDF52D201CB53600B141C2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EDFDF530201CB5A300B141C2 /* VideoCallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCallViewController.h; sourceTree = "<group>"; };
+		EDFDF531201CB5A300B141C2 /* VideoCallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCallViewController.m; sourceTree = "<group>"; };
+		EDFDF533201CB5F400B141C2 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		EDFDF534201CB5F400B141C2 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		F6E8264443E80A023E4F3642 /* Pods-Ello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ello.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ello/Pods-Ello.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED0D4F8F1F9CB1400060582F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDB3663201CCEC50099C7CD /* libc++.tbd in Frameworks */,
+				EDFDF52E201CB53600B141C2 /* SystemConfiguration.framework in Frameworks */,
+				EDFDF52C201CB53000B141C2 /* CoreMedia.framework in Frameworks */,
+				EDFDF52A201CB52900B141C2 /* GLKit.framework in Frameworks */,
+				EDFDF528201CB52200B141C2 /* CoreTelephony.framework in Frameworks */,
+				EDFDF526201CB51900B141C2 /* AVFoundation.framework in Frameworks */,
+				EDFDF524201CB51200B141C2 /* VideoToolbox.framework in Frameworks */,
+				EDFDF522201CB50D00B141C2 /* AudioToolbox.framework in Frameworks */,
+				526B0C313779CDEF723496CA /* libPods-Ello.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0B4B00DBDEC80A0DA4BC09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6E8264443E80A023E4F3642 /* Pods-Ello.debug.xcconfig */,
+				AF021D9433698047897C99D8 /* Pods-Ello.release.xcconfig */,
+				7238EE402083D8726D07C6C4 /* Pods-TwilioVideo-Ello.debug.xcconfig */,
+				A3ECEA1F7A02EC239B8088D0 /* Pods-TwilioVideo-Ello.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED0D4F891F9CB1400060582F = {
+			isa = PBXGroup;
+			children = (
+				ED4360F81FB63F1600C4F062 /* SF-Fonts-August-26 */,
+				ED0D4F941F9CB1410060582F /* Ello */,
+				ED0D4F931F9CB1400060582F /* Products */,
+				0C0B4B00DBDEC80A0DA4BC09 /* Pods */,
+				FA590D8304D823B68345BEE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED0D4F931F9CB1400060582F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED0D4F921F9CB1400060582F /* Ello.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED0D4F941F9CB1410060582F /* Ello */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDF52F201CB57F00B141C2 /* AVCall */,
+				ED267DE51FE5484F007AB034 /* Ello.entitlements */,
+				ED3879AA1FC041B7005829D9 /* Models */,
+				ED4360911FB6268E00C4F062 /* SupportingFiles */,
+				ED43608D1FB6256400C4F062 /* Utilities */,
+				ED1292791FA606D600830790 /* Extension */,
+				ED1292671FA4A71B00830790 /* Signup */,
+				ED1292661FA4A71400830790 /* Login */,
+				ED1292321FA49C8100830790 /* Chatting */,
+				ED0D4F9B1F9CB1410060582F /* Main.storyboard */,
+				ED1C035F1FCEC225006AF4DE /* Friends */,
+				ED1292311FA49C2500830790 /* MessageHistory */,
+				ED0D4F951F9CB1410060582F /* AppDelegate.h */,
+				ED0D4F961F9CB1410060582F /* AppDelegate.m */,
+				ED0D4FA11F9CB1410060582F /* Assets.xcassets */,
+				ED0D4FA31F9CB1410060582F /* LaunchScreen.storyboard */,
+				ED0D4FA61F9CB1410060582F /* Info.plist */,
+				ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */,
+				ED0D4FA71F9CB1410060582F /* main.m */,
+				ED0D4F9E1F9CB1410060582F /* Ello.xcdatamodeld */,
+				ED4361551FB648B300C4F062 /* ElloNavigationBar.h */,
+				ED4361561FB648B300C4F062 /* ElloNavigationBar.m */,
+				EDAD07EE1FB727430062EF96 /* tabBarViewController.h */,
+				EDAD07EF1FB727430062EF96 /* tabBarViewController.m */,
+				ED24EDC0200B75F300AF428D /* FireBaseService.h */,
+				ED24EDC1200B75F300AF428D /* FireBaseService.m */,
+			);
+			path = Ello;
+			sourceTree = "<group>";
+		};
+		ED1292311FA49C2500830790 /* MessageHistory */ = {
+			isa = PBXGroup;
+			children = (
+				ED0D4FAE1F9CB8150060582F /* ChatHistoryCell.xib */,
+				ED4360931FB62FA800C4F062 /* MessageHistorySearchBar.xib */,
+				ED12922E1FA49BAC00830790 /* MessageHistoryViewController.h */,
+				ED12922F1FA49BAC00830790 /* MessageHistoryViewController.m */,
+				ED0D4FB51F9CF6CD0060582F /* ChatHistoryTableViewCell.h */,
+				ED0D4FB61F9CF6CD0060582F /* ChatHistoryTableViewCell.m */,
+				ED4360961FB6310900C4F062 /* MessageHistorySearchBar.h */,
+				ED4360971FB6310900C4F062 /* MessageHistorySearchBar.m */,
+			);
+			path = MessageHistory;
+			sourceTree = "<group>";
+		};
+		ED1292321FA49C8100830790 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				EDF24B751FBF5DDE004CA99B /* MessageBubble */,
+				ED1292341FA49CFE00830790 /* UserChattingViewController.h */,
+				ED1292351FA49CFE00830790 /* UserChattingViewController.m */,
+				ED12925B1FA49F5900830790 /* ChattingStoryboard.storyboard */,
+				ED0496701FC99D7A0020D228 /* chatViewController.h */,
+				ED0496711FC99D7A0020D228 /* chatViewController.m */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		ED1292661FA4A71400830790 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED1292681FA4A73300830790 /* LoginViewController.h */,
+				ED1292691FA4A73300830790 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED1292671FA4A71B00830790 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				ED12926D1FA4A74A00830790 /* SignupViewController.h */,
+				ED12926E1FA4A74A00830790 /* SignupViewController.m */,
+				ED1292701FA4A75900830790 /* Signup.storyboard */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		ED1292791FA606D600830790 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED12927A1FA606F000830790 /* UIColor+Hex.h */,
+				ED12927B1FA606F000830790 /* UIColor+Hex.m */,
+				ED183DD9200D23D7007C4B03 /* NSDate+Formatter.h */,
+				ED183DDA200D23D7007C4B03 /* NSDate+Formatter.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED1C035F1FCEC225006AF4DE /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				ED1C03601FCEC24A006AF4DE /* FriendsListViewController.h */,
+				ED1C03611FCEC24A006AF4DE /* FriendsListViewController.m */,
+				ED1C03631FCEC28F006AF4DE /* FriendsTableViewCell.h */,
+				ED1C03641FCEC28F006AF4DE /* FriendsTableViewCell.m */,
+				ED1C03661FCEC2AA006AF4DE /* FriendsTableViewCell.xib */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		ED3879AA1FC041B7005829D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED3879AB1FC041D2005829D9 /* MessageModel.h */,
+				ED3879AC1FC041D2005829D9 /* MessageModel.m */,
+				ED1C03681FCEC807006AF4DE /* UserModel.h */,
+				ED1C03691FCEC807006AF4DE /* UserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED43608D1FB6256400C4F062 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED43608E1FB6257C00C4F062 /* Constants.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ED4360911FB6268E00C4F062 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ED4360901FB6267D00C4F062 /* Ello-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		ED4360F81FB63F1600C4F062 /* SF-Fonts-August-26 */ = {
+			isa = PBXGroup;
+			children = (
+				ED4360F91FB63F1600C4F062 /* SF-Compact */,
+				ED4361101FB63F1700C4F062 /* SF-UI */,
+			);
+			path = "SF-Fonts-August-26";
+			sourceTree = "<group>";
+		};
+		ED4360F91FB63F1600C4F062 /* SF-Compact */ = {
+			isa = PBXGroup;
+			children = (
+				ED4360FA1FB63F1600C4F062 /* License Agreement for SF Compact Font.pdf */,
+				ED4360FB1FB63F1600C4F062 /* SF-Compact-Display-Black.otf */,
+				ED4360FC1FB63F1700C4F062 /* SF-Compact-Display-Bold.otf */,
+				ED4360FD1FB63F1700C4F062 /* SF-Compact-Display-Heavy.otf */,
+				ED4360FE1FB63F1700C4F062 /* SF-Compact-Display-Light.otf */,
+				ED4360FF1FB63F1700C4F062 /* SF-Compact-Display-Medium.otf */,
+				ED4361001FB63F1700C4F062 /* SF-Compact-Display-Regular.otf */,
+				ED4361011FB63F1700C4F062 /* SF-Compact-Display-Semibold.otf */,
+				ED4361021FB63F1700C4F062 /* SF-Compact-Display-Thin.otf */,
+				ED4361031FB63F1700C4F062 /* SF-Compact-Display-Ultralight.otf */,
+				ED4361041FB63F1700C4F062 /* SF-Compact-Text-Bold.otf */,
+				ED4361051FB63F1700C4F062 /* SF-Compact-Text-BoldItalic.otf */,
+				ED4361061FB63F1700C4F062 /* SF-Compact-Text-Heavy.otf */,
+				ED4361071FB63F1700C4F062 /* SF-Compact-Text-HeavyItalic.otf */,
+				ED4361081FB63F1700C4F062 /* SF-Compact-Text-Light.otf */,
+				ED4361091FB63F1700C4F062 /* SF-Compact-Text-LightItalic.otf */,
+				ED43610A1FB63F1700C4F062 /* SF-Compact-Text-Medium.otf */,
+				ED43610B1FB63F1700C4F062 /* SF-Compact-Text-MediumItalic.otf */,
+				ED43610C1FB63F1700C4F062 /* SF-Compact-Text-Regular.otf */,
+				ED43610D1FB63F1700C4F062 /* SF-Compact-Text-RegularItalic.otf */,
+				ED43610E1FB63F1700C4F062 /* SF-Compact-Text-Semibold.otf */,
+				ED43610F1FB63F1700C4F062 /* SF-Compact-Text-SemiboldItalic.otf */,
+			);
+			path = "SF-Compact";
+			sourceTree = "<group>";
+		};
+		ED4361101FB63F1700C4F062 /* SF-UI */ = {
+			isa = PBXGroup;
+			children = (
+				ED4361111FB63F1700C4F062 /* License Agreement for SF UI Font.pdf */,
+				ED4361121FB63F1700C4F062 /* SF-UI-Display-Black.otf */,
+				ED4361131FB63F1700C4F062 /* SF-UI-Display-Bold.otf */,
+				ED4361141FB63F1700C4F062 /* SF-UI-Display-Heavy.otf */,
+				ED4361151FB63F1700C4F062 /* SF-UI-Display-Light.otf */,
+				ED4361161FB63F1700C4F062 /* SF-UI-Display-Medium.otf */,
+				ED4361171FB63F1700C4F062 /* SF-UI-Display-Regular.otf */,
+				ED4361181FB63F1700C4F062 /* SF-UI-Display-Semibold.otf */,
+				ED4361191FB63F1700C4F062 /* SF-UI-Display-Thin.otf */,
+				ED43611A1FB63F1700C4F062 /* SF-UI-Display-Ultralight.otf */,
+				ED43611B1FB63F1700C4F062 /* SF-UI-Text-Bold.otf */,
+				ED43611C1FB63F1700C4F062 /* SF-UI-Text-BoldItalic.otf */,
+				ED43611D1FB63F1700C4F062 /* SF-UI-Text-Heavy.otf */,
+				ED43611E1FB63F1700C4F062 /* SF-UI-Text-HeavyItalic.otf */,
+				ED43611F1FB63F1700C4F062 /* SF-UI-Text-Light.otf */,
+				ED4361201FB63F1700C4F062 /* SF-UI-Text-LightItalic.otf */,
+				ED4361211FB63F1700C4F062 /* SF-UI-Text-Medium.otf */,
+				ED4361221FB63F1700C4F062 /* SF-UI-Text-MediumItalic.otf */,
+				ED4361231FB63F1700C4F062 /* SF-UI-Text-Regular.otf */,
+				ED4361241FB63F1700C4F062 /* SF-UI-Text-RegularItalic.otf */,
+				ED4361251FB63F1700C4F062 /* SF-UI-Text-Semibold.otf */,
+				ED4361261FB63F1700C4F062 /* SF-UI-Text-SemiboldItalic.otf */,
+			);
+			path = "SF-UI";
+			sourceTree = "<group>";
+		};
+		EDF24B751FBF5DDE004CA99B /* MessageBubble */ = {
+			isa = PBXGroup;
+			children = (
+				ED38799D1FBF8601005829D9 /* ChatCellSettings.h */,
+				ED38799C1FBF8601005829D9 /* ChatCellSettings.m */,
+				ED3879A11FBF8601005829D9 /* ChatReceiveCell.xib */,
+				ED38799A1FBF8600005829D9 /* ChatSendCell.xib */,
+				ED3879991FBF8600005829D9 /* ChatTableViewCellXIB.h */,
+				ED38799F1FBF8601005829D9 /* ChatTableViewCellXIB.m */,
+				ED3879A01FBF8601005829D9 /* ContentView.h */,
+				ED3879A21FBF8601005829D9 /* ContentView.m */,
+			);
+			name = MessageBubble;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EDFDF52F201CB57F00B141C2 /* AVCall */ = {
+			isa = PBXGroup;
+			children = (
+				EDFDF530201CB5A300B141C2 /* VideoCallViewController.h */,
+				EDFDF531201CB5A300B141C2 /* VideoCallViewController.m */,
+				EDFDF533201CB5F400B141C2 /* Utils.h */,
+				EDFDF534201CB5F400B141C2 /* Utils.m */,
+				EDDB3664201CF33F0099C7CD /* AVCallStoryBoard.storyboard */,
+			);
+			path = AVCall;
+			sourceTree = "<group>";
+		};
+		FA590D8304D823B68345BEE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB3662201CCEC50099C7CD /* libc++.tbd */,
+				EDFDF52D201CB53600B141C2 /* SystemConfiguration.framework */,
+				EDFDF52B201CB53000B141C2 /* CoreMedia.framework */,
+				EDFDF529201CB52900B141C2 /* GLKit.framework */,
+				EDFDF527201CB52200B141C2 /* CoreTelephony.framework */,
+				EDFDF525201CB51800B141C2 /* AVFoundation.framework */,
+				EDFDF523201CB51200B141C2 /* VideoToolbox.framework */,
+				EDFDF521201CB50D00B141C2 /* AudioToolbox.framework */,
+				E787006D2FF20E90362B04CC /* libPods-TwilioVideo-Ello.a */,
+				6AFFB5732A441BC0BA7CCDBE /* libPods-Ello.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED0D4F911F9CB1400060582F /* Ello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED0D4FAB1F9CB1410060582F /* Build configuration list for PBXNativeTarget "Ello" */;
+			buildPhases = (
+				57BAF3F136A8879F2C1F1F34 /* [CP] Check Pods Manifest.lock */,
+				ED0D4F8E1F9CB1400060582F /* Sources */,
+				ED0D4F8F1F9CB1400060582F /* Frameworks */,
+				ED0D4F901F9CB1400060582F /* Resources */,
+				1A2FF9978350C8F21F23FB33 /* [CP] Embed Pods Frameworks */,
+				9D7BB8FA4FF53F8CCB538AB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ello;
+			productName = Ello;
+			productReference = ED0D4F921F9CB1400060582F /* Ello.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED0D4F8A1F9CB1400060582F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "vd-rahim";
+				TargetAttributes = {
+					ED0D4F911F9CB1400060582F = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = ED0D4F8D1F9CB1400060582F /* Build configuration list for PBXProject "Ello" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED0D4F891F9CB1400060582F;
+			productRefGroup = ED0D4F931F9CB1400060582F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED0D4F911F9CB1400060582F /* Ello */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED0D4F901F9CB1400060582F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED43614F1FB6408200C4F062 /* SF-UI-Text-Semibold.otf in Resources */,
+				ED4361301FB6407800C4F062 /* SF-Compact-Text-Bold.otf in Resources */,
+				ED4361371FB6407800C4F062 /* SF-Compact-Text-MediumItalic.otf in Resources */,
+				ED3879A31FBF8601005829D9 /* ChatSendCell.xib in Resources */,
+				ED4361271FB6406F00C4F062 /* SF-Compact-Display-Bold.otf in Resources */,
+				ED1292711FA4A75900830790 /* Signup.storyboard in Resources */,
+				ED4361401FB6408200C4F062 /* SF-UI-Display-Medium.otf in Resources */,
+				ED43612E1FB6407800C4F062 /* SF-Compact-Display-Thin.otf in Resources */,
+				ED43613F1FB6408200C4F062 /* SF-UI-Display-Light.otf in Resources */,
+				ED4361441FB6408200C4F062 /* SF-UI-Display-Ultralight.otf in Resources */,
+				ED43614C1FB6408200C4F062 /* SF-UI-Text-MediumItalic.otf in Resources */,
+				ED4361411FB6408200C4F062 /* SF-UI-Display-Regular.otf in Resources */,
+				EDDB3665201CF33F0099C7CD /* AVCallStoryBoard.storyboard in Resources */,
+				ED4361421FB6408200C4F062 /* SF-UI-Display-Semibold.otf in Resources */,
+				ED0D4FA51F9CB1410060582F /* LaunchScreen.storyboard in Resources */,
+				ED4361281FB6407200C4F062 /* SF-Compact-Display-Black.otf in Resources */,
+				ED4361311FB6407800C4F062 /* SF-Compact-Text-BoldItalic.otf in Resources */,
+				ED43614D1FB6408200C4F062 /* SF-UI-Text-Regular.otf in Resources */,
+				ED43612D1FB6407800C4F062 /* SF-Compact-Display-Semibold.otf in Resources */,
+				ED4361291FB6407800C4F062 /* SF-Compact-Display-Heavy.otf in Resources */,
+				ED43612C1FB6407800C4F062 /* SF-Compact-Display-Regular.otf in Resources */,
+				ED4361351FB6407800C4F062 /* SF-Compact-Text-LightItalic.otf in Resources */,
+				ED4361471FB6408200C4F062 /* SF-UI-Text-Heavy.otf in Resources */,
+				ED4361461FB6408200C4F062 /* SF-UI-Text-BoldItalic.otf in Resources */,
+				ED0D4FA21F9CB1410060582F /* Assets.xcassets in Resources */,
+				ED4361491FB6408200C4F062 /* SF-UI-Text-Light.otf in Resources */,
+				ED43613A1FB6407800C4F062 /* SF-Compact-Text-Semibold.otf in Resources */,
+				ED4361431FB6408200C4F062 /* SF-UI-Display-Thin.otf in Resources */,
+				ED43613D1FB6408200C4F062 /* SF-UI-Display-Bold.otf in Resources */,
+				ED43613C1FB6408200C4F062 /* SF-UI-Display-Black.otf in Resources */,
+				ED4361591FB70FB200C4F062 /* GoogleService-Info.plist in Resources */,
+				ED0D4FAF1F9CB8150060582F /* ChatHistoryCell.xib in Resources */,
+				ED4361361FB6407800C4F062 /* SF-Compact-Text-Medium.otf in Resources */,
+				ED43614E1FB6408200C4F062 /* SF-UI-Text-RegularItalic.otf in Resources */,
+				ED4361321FB6407800C4F062 /* SF-Compact-Text-Heavy.otf in Resources */,
+				ED1C03671FCEC2AA006AF4DE /* FriendsTableViewCell.xib in Resources */,
+				ED43612A1FB6407800C4F062 /* SF-Compact-Display-Light.otf in Resources */,
+				ED43613B1FB6407800C4F062 /* SF-Compact-Text-SemiboldItalic.otf in Resources */,
+				ED4361381FB6407800C4F062 /* SF-Compact-Text-Regular.otf in Resources */,
+				ED12925C1FA49F5900830790 /* ChattingStoryboard.storyboard in Resources */,
+				ED43614B1FB6408200C4F062 /* SF-UI-Text-Medium.otf in Resources */,
+				ED4361451FB6408200C4F062 /* SF-UI-Text-Bold.otf in Resources */,
+				ED4361341FB6407800C4F062 /* SF-Compact-Text-Light.otf in Resources */,
+				ED4361391FB6407800C4F062 /* SF-Compact-Text-RegularItalic.otf in Resources */,
+				ED43612F1FB6407800C4F062 /* SF-Compact-Display-Ultralight.otf in Resources */,
+				ED4361501FB6408200C4F062 /* SF-UI-Text-SemiboldItalic.otf in Resources */,
+				ED3879A71FBF8601005829D9 /* ChatReceiveCell.xib in Resources */,
+				ED4360941FB62FA800C4F062 /* MessageHistorySearchBar.xib in Resources */,
+				ED43614A1FB6408200C4F062 /* SF-UI-Text-LightItalic.otf in Resources */,
+				ED43612B1FB6407800C4F062 /* SF-Compact-Display-Medium.otf in Resources */,
+				ED0D4F9D1F9CB1410060582F /* Main.storyboard in Resources */,
+				ED4361481FB6408200C4F062 /* SF-UI-Text-HeavyItalic.otf in Resources */,
+				ED4361331FB6407800C4F062 /* SF-Compact-Text-HeavyItalic.otf in Resources */,
+				ED43613E1FB6408200C4F062 /* SF-UI-Display-Heavy.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2FF9978350C8F21F23FB33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ello/Pods-Ello-frameworks.sh",
+				"${PODS_ROOT}/TwilioVideo/TwilioVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ello/Pods-Ello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57BAF3F136A8879F2C1F1F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ello-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7BB8FA4FF53F8CCB538AB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ello/Pods-Ello-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ello/Pods-Ello-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED0D4F8E1F9CB1400060582F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED24EDC2200B75F300AF428D /* FireBaseService.m in Sources */,
+				ED0D4FB71F9CF6CD0060582F /* ChatHistoryTableViewCell.m in Sources */,
+				ED1292361FA49CFE00830790 /* UserChattingViewController.m in Sources */,
+				ED1C036A1FCEC807006AF4DE /* UserModel.m in Sources */,
+				ED1C03621FCEC24A006AF4DE /* FriendsListViewController.m in Sources */,
+				ED4360981FB6310900C4F062 /* MessageHistorySearchBar.m in Sources */,
+				ED1292301FA49BAC00830790 /* MessageHistoryViewController.m in Sources */,
+				ED3879AD1FC041D2005829D9 /* MessageModel.m in Sources */,
+				ED183DDB200D23D7007C4B03 /* NSDate+Formatter.m in Sources */,
+				ED12926F1FA4A74A00830790 /* SignupViewController.m in Sources */,
+				ED3879A61FBF8601005829D9 /* ChatTableViewCellXIB.m in Sources */,
+				ED0496721FC99D7A0020D228 /* chatViewController.m in Sources */,
+				EDFDF535201CB5F400B141C2 /* Utils.m in Sources */,
+				ED0D4FA01F9CB1410060582F /* Ello.xcdatamodeld in Sources */,
+				EDFDF532201CB5A300B141C2 /* VideoCallViewController.m in Sources */,
+				ED1C03651FCEC28F006AF4DE /* FriendsTableViewCell.m in Sources */,
+				ED3879A51FBF8601005829D9 /* ChatCellSettings.m in Sources */,
+				ED0D4FA81F9CB1410060582F /* main.m in Sources */,
+				ED12926A1FA4A73300830790 /* LoginViewController.m in Sources */,
+				ED0D4F971F9CB1410060582F /* AppDelegate.m in Sources */,
+				EDAD07F01FB727430062EF96 /* tabBarViewController.m in Sources */,
+				ED12927C1FA606F000830790 /* UIColor+Hex.m in Sources */,
+				ED3879A81FBF8601005829D9 /* ContentView.m in Sources */,
+				ED4361571FB648B300C4F062 /* ElloNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ED0D4F9B1F9CB1410060582F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED0D4F9C1F9CB1410060582F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED0D4FA31F9CB1410060582F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED0D4FA41F9CB1410060582F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED0D4FA91F9CB1410060582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Ello-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ED0D4FAA1F9CB1410060582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Ello-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED0D4FAC1F9CB1410060582F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E8264443E80A023E4F3642 /* Pods-Ello.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Ello/Ello.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+				);
+				INFOPLIST_FILE = Ello/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahim.Ello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED0D4FAD1F9CB1410060582F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF021D9433698047897C99D8 /* Pods-Ello.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Ello/Ello.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+				);
+				INFOPLIST_FILE = Ello/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahim.Ello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED0D4F8D1F9CB1400060582F /* Build configuration list for PBXProject "Ello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0D4FA91F9CB1410060582F /* Debug */,
+				ED0D4FAA1F9CB1410060582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED0D4FAB1F9CB1410060582F /* Build configuration list for PBXNativeTarget "Ello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0D4FAC1F9CB1410060582F /* Debug */,
+				ED0D4FAD1F9CB1410060582F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED0D4F9E1F9CB1410060582F /* Ello.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED0D4F9F1F9CB1410060582F /* Ello.xcdatamodel */,
+			);
+			currentVersion = ED0D4F9F1F9CB1410060582F /* Ello.xcdatamodel */;
+			path = Ello.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED0D4F8A1F9CB1400060582F /* Project object */;
+}

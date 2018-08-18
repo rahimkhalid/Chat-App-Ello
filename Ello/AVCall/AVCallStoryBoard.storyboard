@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Call View Controller-->
+        <scene sceneID="QlI-O2-yzl">
+            <objects>
+                <viewController storyboardIdentifier="AVCallViewController" id="q4H-sN-hGn" customClass="VideoCallViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="04Z-Eq-Xy1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mcN-Wq-kk3">
+                                <rect key="frame" x="60" y="571.5" width="255" height="63.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-Yh-uS6">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="63.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ecU-Yh-uS6" secondAttribute="height" multiplier="1:1" id="5Wg-JU-ShT"/>
+                                            <constraint firstAttribute="height" constant="64" id="tFD-aD-yJV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="mic-unmute"/>
+                                        <connections>
+                                            <action selector="micButtonPressed:" destination="q4H-sN-hGn" eventType="touchUpInside" id="atf-AQ-9s1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrd-Wh-DCd">
+                                        <rect key="frame" x="96" y="0.0" width="63.5" height="63.5"/>
+                                        <color key="backgroundColor" red="0.81190776819999999" green="0.2122890502" blue="0.19211532179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Qrd-Wh-DCd" secondAttribute="height" multiplier="1:1" id="c1z-L5-bXF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="call-end"/>
+                                        <connections>
+                                            <action selector="disconnectButtonPressed:" destination="q4H-sN-hGn" eventType="touchUpInside" id="1UX-iN-usd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp7-Lg-7kR">
+                                        <rect key="frame" x="191.5" y="0.0" width="63.5" height="63.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Dp7-Lg-7kR" secondAttribute="height" multiplier="1:1" id="I5b-Up-hNV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="video-on"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qrd-Wh-DCd" firstAttribute="height" secondItem="ecU-Yh-uS6" secondAttribute="height" id="EHE-b4-1zd"/>
+                                    <constraint firstItem="ecU-Yh-uS6" firstAttribute="leading" secondItem="mcN-Wq-kk3" secondAttribute="leading" id="GiK-ox-Ukt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dp7-Lg-7kR" secondAttribute="trailing" id="rW7-cL-Y5Y"/>
+                                    <constraint firstItem="Dp7-Lg-7kR" firstAttribute="height" secondItem="Qrd-Wh-DCd" secondAttribute="height" id="xpo-B7-70V"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpP-ER-WDC" customClass="TVIVideoView">
+                                <rect key="frame" x="250" y="401.5" width="120" height="160"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="93q-Mr-6jR"/>
+                                    <constraint firstAttribute="height" constant="160" id="L5E-sK-x4T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="R6q-Jd-NBf" firstAttribute="bottom" secondItem="mcN-Wq-kk3" secondAttribute="bottom" constant="32" id="BiC-6E-k29"/>
+                            <constraint firstItem="R6q-Jd-NBf" firstAttribute="trailing" secondItem="mcN-Wq-kk3" secondAttribute="trailing" constant="60" id="HZ2-Ub-JyL"/>
+                            <constraint firstItem="mcN-Wq-kk3" firstAttribute="top" secondItem="GpP-ER-WDC" secondAttribute="bottom" constant="10" id="LgA-Tx-Emu"/>
+                            <constraint firstItem="mcN-Wq-kk3" firstAttribute="leading" secondItem="R6q-Jd-NBf" secondAttribute="leading" constant="60" id="osh-hX-6c2"/>
+                            <constraint firstItem="R6q-Jd-NBf" firstAttribute="trailing" secondItem="GpP-ER-WDC" secondAttribute="trailing" constant="5" id="udH-9S-UUe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R6q-Jd-NBf"/>
+                    </view>
+                    <connections>
+                        <outlet property="callEndButton" destination="Qrd-Wh-DCd" id="zuO-60-PTb"/>
+                        <outlet property="micBtn" destination="ecU-Yh-uS6" id="rWd-w4-c4A"/>
+                        <outlet property="previewView" destination="GpP-ER-WDC" id="HuK-xN-Tkx"/>
+                        <outlet property="videoButton" destination="Dp7-Lg-7kR" id="ZqE-zx-2ga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vrd-J6-chH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2116" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="call-end" width="48" height="48"/>
+        <image name="mic-unmute" width="48" height="48"/>
+        <image name="video-on" width="48" height="48"/>
+    </resources>
+</document>

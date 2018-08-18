@@ -1,0 +1,14 @@
+//
+//  Ello-Prefix.pch
+//  Ello
+//
+//  Created by vd-rahim on 11/10/17.
+//  Copyright © 2017 vd-rahim. All rights reserved.
+//
+
+#ifndef Ello_Prefix_pch
+#define Ello_Prefix_pch
+
+#import "Constants.h"
+#import "NSTEasyJSON.h"
+#endif /* Ello_Prefix_pch */

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iMessage-->
+        <scene sceneID="h1l-OK-4gl">
+            <objects>
+                <viewController storyboardIdentifier="UserChattingViewController" title="iMessage" hidesBottomBarWhenPushed="YES" id="EAh-x3-4Uo" customClass="UserChattingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AvY-od-Ox8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mm9-OD-cGC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCW-9V-mtx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kCH-jH-5K2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EAh-x3-4Uo" id="rbq-sD-Ycn"/>
+                                    <outlet property="delegate" destination="EAh-x3-4Uo" id="ycJ-Oa-lLh"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YxO-sp-fdJ" customClass="ContentView">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M2u-vZ-YQI">
+                                        <rect key="frame" x="40" y="15" width="287" height="20"/>
+                                        <color key="backgroundColor" red="0.96864068508148193" green="0.9686199426651001" blue="0.96862399578094482" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="CTd-SR-pra"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-wT-zJ8">
+                                        <rect key="frame" x="343" y="12.5" width="24" height="24"/>
+                                        <state key="normal" image="icons8-facebook-like-24">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMessage:" destination="EAh-x3-4Uo" eventType="touchUpInside" id="pwn-hn-S46"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqg-0y-Hox">
+                                        <rect key="frame" x="8" y="13" width="24" height="24"/>
+                                        <state key="normal" image="attachment">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendAttachment:" destination="EAh-x3-4Uo" eventType="touchUpInside" id="n5D-zw-t7y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Mqg-0y-Hox" secondAttribute="bottom" constant="8" id="Cwa-gK-esK"/>
+                                    <constraint firstAttribute="centerY" secondItem="mTP-wT-zJ8" secondAttribute="centerY" id="DLe-sD-NGJ"/>
+                                    <constraint firstItem="M2u-vZ-YQI" firstAttribute="leading" secondItem="YxO-sp-fdJ" secondAttribute="leading" constant="8" id="M26-47-WFM"/>
+                                    <constraint firstItem="mTP-wT-zJ8" firstAttribute="leading" secondItem="M2u-vZ-YQI" secondAttribute="trailing" constant="16" id="QR6-qA-Hgi"/>
+                                    <constraint firstItem="Mqg-0y-Hox" firstAttribute="leading" secondItem="YxO-sp-fdJ" secondAttribute="leading" constant="8" id="UMJ-JN-ohU"/>
+                                    <constraint firstItem="mTP-wT-zJ8" firstAttribute="leading" secondItem="M2u-vZ-YQI" secondAttribute="trailing" constant="8" id="Wlq-A1-gCG"/>
+                                    <constraint firstAttribute="centerY" secondItem="Mqg-0y-Hox" secondAttribute="centerY" id="XDN-jg-Z0d"/>
+                                    <constraint firstAttribute="height" constant="49" id="h3D-qv-NFh"/>
+                                    <constraint firstAttribute="bottom" secondItem="M2u-vZ-YQI" secondAttribute="bottom" constant="8" id="jJ3-pH-9FF"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTP-wT-zJ8" secondAttribute="trailing" constant="8" id="kUJ-2j-FKd"/>
+                                    <constraint firstItem="M2u-vZ-YQI" firstAttribute="leading" secondItem="Mqg-0y-Hox" secondAttribute="trailing" constant="8" id="mL4-E0-93U"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="qhz-Rq-ZE9"/>
+                                    <constraint firstAttribute="centerY" secondItem="M2u-vZ-YQI" secondAttribute="centerY" id="uHe-6r-19R"/>
+                                    <constraint firstItem="M2u-vZ-YQI" firstAttribute="top" secondItem="YxO-sp-fdJ" secondAttribute="top" constant="8" id="v1O-XA-CiT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qhz-Rq-ZE9"/>
+                                        <exclude reference="Cwa-gK-esK"/>
+                                        <exclude reference="M26-47-WFM"/>
+                                        <exclude reference="jJ3-pH-9FF"/>
+                                        <exclude reference="v1O-XA-CiT"/>
+                                        <exclude reference="Wlq-A1-gCG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YxO-sp-fdJ" secondAttribute="trailing" id="1UB-T3-eTS"/>
+                            <constraint firstItem="mm9-OD-cGC" firstAttribute="top" secondItem="YxO-sp-fdJ" secondAttribute="bottom" id="9YZ-Qw-J0d"/>
+                            <constraint firstAttribute="trailing" secondItem="kCH-jH-5K2" secondAttribute="trailing" id="NNY-Fe-iua"/>
+                            <constraint firstItem="kCH-jH-5K2" firstAttribute="leading" secondItem="bCW-9V-mtx" secondAttribute="leading" id="Zb3-P4-FmN"/>
+                            <constraint firstItem="kCH-jH-5K2" firstAttribute="top" secondItem="bCW-9V-mtx" secondAttribute="top" id="gEh-ZD-0cy"/>
+                            <constraint firstItem="YxO-sp-fdJ" firstAttribute="top" secondItem="kCH-jH-5K2" secondAttribute="bottom" constant="8" id="hhD-6D-1nk"/>
+                            <constraint firstItem="YxO-sp-fdJ" firstAttribute="top" secondItem="kCH-jH-5K2" secondAttribute="bottom" constant="8" id="ij4-CW-xXa"/>
+                            <constraint firstItem="YxO-sp-fdJ" firstAttribute="leading" secondItem="bCW-9V-mtx" secondAttribute="leading" id="jKU-8D-ysb"/>
+                            <constraint firstAttribute="centerX" secondItem="YxO-sp-fdJ" secondAttribute="centerX" id="sSJ-DT-bZg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rjk-EN-27s"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ij4-CW-xXa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="A6A-bQ-ZHe">
+                        <rightBarButtonItems>
+                            <barButtonItem image="videoCall-navbutton" id="GYW-iW-L4s">
+                                <connections>
+                                    <action selector="videoCallButtonPressed:" destination="EAh-x3-4Uo" id="2jP-3s-t35"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="audioCall-navbutton" id="FFC-Lv-mX2"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="chatTable" destination="kCH-jH-5K2" id="1aU-Ej-rUi"/>
+                        <outlet property="chatTextView" destination="M2u-vZ-YQI" id="ewR-if-QEE"/>
+                        <outlet property="chatTextViewHeightConstraint" destination="CTd-SR-pra" id="E7T-Gt-aZ7"/>
+                        <outlet property="contentView" destination="YxO-sp-fdJ" id="9Pa-CW-3Rr"/>
+                        <outlet property="contentViewBottomConstraint" destination="9YZ-Qw-J0d" id="Qgb-ET-lze"/>
+                        <outlet property="contentViewHeightConstraint" destination="h3D-qv-NFh" id="v6H-wz-pf5"/>
+                        <outlet property="sendMessageBtn" destination="mTP-wT-zJ8" id="x5X-rS-vBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvc-y1-1QG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="attachment" width="24" height="24"/>
+        <image name="audioCall-navbutton" width="24" height="24"/>
+        <image name="icons8-facebook-like-24" width="24" height="24"/>
+        <image name="videoCall-navbutton" width="24" height="24"/>
+    </resources>
+</document>
