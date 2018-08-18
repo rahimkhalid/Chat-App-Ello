@@ -81,7 +81,6 @@
 		ED43614F1FB6408200C4F062 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361251FB63F1700C4F062 /* SF-UI-Text-Semibold.otf */; };
 		ED4361501FB6408200C4F062 /* SF-UI-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED4361261FB63F1700C4F062 /* SF-UI-Text-SemiboldItalic.otf */; };
 		ED4361571FB648B300C4F062 /* ElloNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4361561FB648B300C4F062 /* ElloNavigationBar.m */; };
-		ED4361591FB70FB200C4F062 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */; };
 		EDAD07F01FB727430062EF96 /* tabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAD07EF1FB727430062EF96 /* tabBarViewController.m */; };
 		EDDB3663201CCEC50099C7CD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDB3662201CCEC50099C7CD /* libc++.tbd */; };
 		EDDB3665201CF33F0099C7CD /* AVCallStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB3664201CF33F0099C7CD /* AVCallStoryBoard.storyboard */; };
@@ -201,7 +200,6 @@
 		ED4361261FB63F1700C4F062 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		ED4361551FB648B300C4F062 /* ElloNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElloNavigationBar.h; sourceTree = "<group>"; };
 		ED4361561FB648B300C4F062 /* ElloNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElloNavigationBar.m; sourceTree = "<group>"; };
-		ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDAD07EE1FB727430062EF96 /* tabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabBarViewController.h; sourceTree = "<group>"; };
 		EDAD07EF1FB727430062EF96 /* tabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabBarViewController.m; sourceTree = "<group>"; };
 		EDDB3662201CCEC50099C7CD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -290,7 +288,6 @@
 				ED0D4FA11F9CB1410060582F /* Assets.xcassets */,
 				ED0D4FA31F9CB1410060582F /* LaunchScreen.storyboard */,
 				ED0D4FA61F9CB1410060582F /* Info.plist */,
-				ED4361581FB70E7B00C4F062 /* GoogleService-Info.plist */,
 				ED0D4FA71F9CB1410060582F /* main.m */,
 				ED0D4F9E1F9CB1410060582F /* Ello.xcdatamodeld */,
 				ED4361551FB648B300C4F062 /* ElloNavigationBar.h */,
@@ -612,7 +609,6 @@
 				ED4361431FB6408200C4F062 /* SF-UI-Display-Thin.otf in Resources */,
 				ED43613D1FB6408200C4F062 /* SF-UI-Display-Bold.otf in Resources */,
 				ED43613C1FB6408200C4F062 /* SF-UI-Display-Black.otf in Resources */,
-				ED4361591FB70FB200C4F062 /* GoogleService-Info.plist in Resources */,
 				ED0D4FAF1F9CB8150060582F /* ChatHistoryCell.xib in Resources */,
 				ED4361361FB6407800C4F062 /* SF-Compact-Text-Medium.otf in Resources */,
 				ED43614E1FB6408200C4F062 /* SF-UI-Text-RegularItalic.otf in Resources */,
@@ -878,7 +874,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ello/Ello.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
@@ -911,7 +907,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ello/Ello.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LFQFF3HC6E;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
