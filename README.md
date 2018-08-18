@@ -23,6 +23,6 @@ self.accessToken = @"TWILIO_ACCESS_TOKEN";
 
 *For using server to provide video session keys :*
 1. Replace the tokenUrl in the below line with your url :
-self.tokenUrl =[NSString stringWithFormat:@"http://vermicidal-scale.000webhostapp.com/video/video/index.php?identity=%@&room=%@",_userIdentifier,_callIdentifier];
+self.tokenUrl =[NSString stringWithFormat:@"YOUR SERVER URL"];
 2. No need to update  *self.accessToken = @"TWILIO_ACCESS_TOKEN";* with twilio key.
 
