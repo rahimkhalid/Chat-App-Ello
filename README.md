@@ -7,6 +7,11 @@ Basically, This app includes :
 2. Gmail authentication as user verification.
 3. Twilio for video calling.
 
+# Adding Firebase to the project :
+To add firebase to your project kindly follow the below link.
+
+A Quick Starter to FireBase : (https://firebase.google.com/docs/ios/setup)
+
 # Twilio Video in this project :
 
 A quick starter to TWILIO : (https://github.com/twilio/video-quickstart-swift)
